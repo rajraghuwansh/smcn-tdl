@@ -1,0 +1,29 @@
+model_type: subcomplex
+device: cpu
+
+dataset_root: ./orientability_dataset
+num_pairs: 256
+min_components: 1
+max_components: 3
+min_grid_size: 5
+max_grid_size: 9
+number_of_permuted_copies: 8
+low_rk: 0
+high_rk: 2
+seed: 0
+
+embedding_dim: 64
+number_of_layers: 4
+number_of_mlp_layers: 2
+dropout: 0.0
+in_dropout: 0.0
+residual: false
+activation: relu
+output_ranks: [0, 2]
+
+learning_rate: 0.001
+batch_size: 32
+num_epochs: 50
+train_ratio: 0.8
+num_workers: 0
+log_every: 5

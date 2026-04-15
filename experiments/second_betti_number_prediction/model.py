@@ -499,3 +499,5 @@ def build_homp_no_edge_model(
         zinc_head=False,
         final_dropout=final_dropout,
     )
+
+# %%
